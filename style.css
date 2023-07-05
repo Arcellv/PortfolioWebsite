@@ -2,7 +2,7 @@
 :root{
     --bg-black-900: #f2f2fc;
     --bg-black-100: #fdf9ff;
-    --bg-blac-50: #e8dfec;
+    --bg-black-50: #e8dfec;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
 }
@@ -123,6 +123,10 @@ ul{
     transform: scale(1.05);
 }
 
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
 /*---------------ASIDE---------------*/
 
 .aside{
@@ -134,7 +138,7 @@ ul{
     top: 0;
     padding: 30px;
     height: 100%;
-    border-right: 1px solid var(--bg-blac-50);
+    border-right: 1px solid var(--bg-black-50);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,7 +191,7 @@ ul{
 .aside .nav-toggler{
     height: 40px;
     width: 45px;
-    border: 1px solid var(--bg-blac-50);
+    border: 1px solid var(--bg-black-50);
     cursor: pointer;
     position: fixed;
     left: 300px;
@@ -239,7 +243,7 @@ ul{
     font-size: 16px;
     font-weight: 600;
     display: block;
-    border-bottom: 1px solid var(--bg-blac-50);
+    border-bottom: 1px solid var(--bg-black-50);
     color: var(--text-black-900);
     padding: 5px 15px;
 }
@@ -374,7 +378,7 @@ h3.my-profession{
     padding: 10px 0;
     font-size: 16px;
     color: var(--text-black-900);
-    border-bottom: 1px solid var(--bg-blac-50);
+    border-bottom: 1px solid var(--bg-black-50);
 }
 
 .about-section .about-content .personal-info .info-item p span{
@@ -385,7 +389,7 @@ h3.my-profession{
 }
 
 .about-section .about-content .personal-info .buttons{
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .about-section .about-content .personal-info .buttons .btn{
@@ -397,4 +401,75 @@ h3.my-profession{
     flex: 0 0 40%;
     max-width: 40%;
     margin-top: 40px;
+}
+
+.about-section .about-content .skills .skill-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about-section .about-content .skills .skill-item h5{ 
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+}
+
+.about-section .about-content .skills .skill-item .progress{
+    background-color: var(--bg-black-50);
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+
+.about-section .about-content .skills .skill-item{
+    margin-bottom: 30px;
+}
+
+.about-section .about-content .skills .skill-item .progress .progress-in{
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--skin-color);
+}
+
+.about-section .about-content .skills .skill-item .skill-percent{
+    position: absolute;
+    right: 0;
+    color: var(--text-black-900);
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.about-section .about-content .education, 
+.about-section .about-content .experience{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px; 
+}
+
+.about-section .about-content h3 .title{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+
+.about-section .about-content .timeline-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about-section .about-content .timeline{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
 }
