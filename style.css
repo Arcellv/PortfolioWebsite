@@ -103,7 +103,6 @@ ul{
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
-    position: relative;
 }
 
 .btn{
@@ -533,4 +532,85 @@ h3.my-profession{
     font-size: 16px;
     text-align: justify;
     color: var(--text-black-700);
+}
+
+/*--------------SERVICE--------------*/
+
+.service-section{
+    background: var(--bg-black-900);
+}
+
+.service-section .container{
+    padding-bottom: 40px;
+}
+
+.service-item {
+    flex-basis: 50%;
+    max-width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    .service-item {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+  
+
+.service-section .service-item{
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.service-section .service-item .service-item-inner{
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service-section .service-item .service-item-inner{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.service-section .service-item .service-item-inner .icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.service-section .service-item .service-item-inner .icon .fa{
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+}
+
+.service-section .service-item .service-item-inner:hover .icon{
+    background: var(--skin-color);
+}
+
+.service-section .service-item .service-item-inner:hover .icon .fa{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.service-section .service-item .service-item-inner h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.service-section .service-item .service-item-inner p{
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
 }
