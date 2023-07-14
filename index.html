@@ -9,46 +9,49 @@
 
     <!--CSS FILES-->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="color.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+      <!--------------CSS STYLE-SWITCHER------------->
+      <link rel="stylesheet" href="color.css"  class="Alternate-style" title="color" disabled>
+      <link rel="stylesheet" href="color-2.css"  class="Alternate-style" title="color-2" disabled>
+      <link rel="stylesheet" href="color-3.css"  class="Alternate-style" title="color-3" disabled>
+      <link rel="stylesheet" href="color-4.css"  class="Alternate-style" title="color-4" disabled>
+      <link rel="stylesheet" href="color-5.css"  class="Alternate-style" title="color-5" disabled>
+      <link rel="stylesheet" href="style-switcher.css">
   </head>
 
   <body>
     <div class="main-container">
-      <!-------------ASIDE START--------------->
+      <!-------------ASIDE START-------------->
       <div class="aside">
         <div class="logo">
-          <a href="#"><span>A</span>tlas</a>
+          <a href="#home"><span>A</span>tlas</a>
         </div>
         <div class="nav-toggler">
           <span></span>
         </div>
         <ul class="nav">
           <li>
-            <a href="#" class="active"><i class="fa fa-home"></i>Home</a>
+            <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-user"></i>About</a>
+            <a href="#about"><i class="fa fa-user"></i>About</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-list"></i>Services</a>
+            <a href="#service" ><i class="fa fa-list"></i>Services</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-briefcase"></i>Portfolio</a>
+            <a href="#portfolio" ><i class="fa fa-briefcase"></i>Portfolio</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-comment"></i>Contact</a>
+            <a href="#contact"><i class="fa fa-comment"></i>Contact</a>
           </li>
         </ul>
       </div>
       <!-------------ASIDE END--------------->
-      <!-------MAIN CONTENT START-------->
+      <!-------MAIN CONTENT START------------>
       <div class="content">
-        <!-------HOME SECTION START-------->
-        <section class="home-section">
+        <!-------HOME SECTION START---------->
+        <section class="home-section" id="home">
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
@@ -57,7 +60,7 @@
                   <span class="name">Arcel vanda lomendja</span>
                 </h3>
                 <h3 class="my-profession">
-                  I am a <span class="typing">web designer</span>
+                  I am a <span class="typing">Web Developer</span>
                 </h3>
                 <p>
                   I love web development, with an extensive experience for over
@@ -75,7 +78,7 @@
 
         <!-------------HOME SECTION END--------------->
         <!-------ABOUT SECTION START-------->
-        <section class="about-section">
+        <section class="about-section" id="about">
           <div class="container">
             <div class="row">
               <div class="section-litle padd-15">
@@ -288,8 +291,8 @@
         </section>
 
         <!-------ABOUT SECTION END-------->
-        <!--------------SERVICE SECTION START------------------>
-        <section class="service-section">
+        <!--------------SERVICE SECTION START---------------->
+        <section class="service-section" id="service">
           <div class="container">
             <div class="row">
               <div class="section-litle padd-15">
@@ -312,7 +315,7 @@
                   </p>
                 </div>
               </div>
-              <!--------------SERVICE ITEM END------------>
+              <!--------------SERVICE ITEM END-------------->
               <!--------------SERVICE ITEM START------------>
               <div class="service-item">
                 <div class="service-item-inner">
@@ -328,7 +331,7 @@
                   </p>
                 </div>
               </div>
-              <!--------------SERVICE ITEM END------------>
+              <!--------------SERVICE ITEM END-------------->
               <!--------------SERVICE ITEM START------------>
               <div class="service-item">
                 <div class="service-item-inner">
@@ -360,7 +363,7 @@
                   </p>
                 </div>
               </div>
-              <!--------------SERVICE ITEM END------------>
+              <!--------------SERVICE ITEM END-------------->
               <!--------------SERVICE ITEM START------------>
               <div class="service-item">
                 <div class="service-item-inner">
@@ -376,7 +379,7 @@
                   </p>
                 </div>
               </div>
-              <!--------------SERVICE ITEM END------------>
+              <!--------------SERVICE ITEM END-------------->
               <!--------------SERVICE ITEM START------------>
               <div class="service-item">
                 <div class="service-item-inner">
@@ -396,9 +399,9 @@
             </div>
           </div>
         </section>
-        <!----------------------SERVICE SECTION END------------------------>
+        <!----------------------SERVICE SECTION END----------------------->
         <!---------------------- PORTFOLIO SECTION START------------------>
-        <section class="portfolio-section">
+        <section class="portfolio-section" id="portfolio">
           <div class="container">
             <div class="row">
               <div class="section-litle padd-15">
@@ -455,13 +458,13 @@
                   </div>
                 </div>
               </div>
-              <!-----------------PORTFOLIO ITEM END------------------------>
+              <!-----------------PORTFOLIO ITEM END-------------------->
             </div>
           </div>
         </section>
         <!---------------------- PORTFOLIO SECTION END----------------->
         <!---------------------- CONTACT SECTION START----------------->
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
           <div class="container">
             <div class="row">
               <div class="section-litle padd-15">
@@ -480,7 +483,7 @@
                 <p>+90 533 88 40 966</p>
               </div>
               <!------------------CONTACT INFO ITEM END------------------->
-              <!------------------CONTACT INFO ITEM START------------------->
+              <!------------------CONTACT INFO ITEM START----------------->
               <div class="contact-info-item padd-15">
                 <div class="icon">
                   <i class="fa fa-map-marker-alt"></i>
@@ -489,7 +492,7 @@
                 <p>Arcel vanda lomendja</p>
               </div>
               <!------------------CONTACT INFO ITEM END------------------->
-              <!------------------CONTACT INFO ITEM START------------------->
+              <!------------------CONTACT INFO ITEM START----------------->
               <div class="contact-info-item padd-15">
                 <div class="icon">
                   <i class="fa fa-envelope"></i>
@@ -497,7 +500,16 @@
                 <h4>Email</h4>
                 <p>lomendjaa@gmail.com</p>
               </div>
-              <!------------------CONTACT INFO ITEM END------------------->
+              <!------------------CONTACT INFO ITEM END--------------->
+               <!------------------CONTACT INFO ITEM START----------------->
+               <div class="contact-info-item padd-15">
+                <div class="icon">
+                  <i class="fa fa-globe-africa"></i>
+                </div>
+                <h4>Website</h4>
+                <p>www.lomendjaa.com</p>
+              </div>
+              <!------------------CONTACT INFO ITEM END--------------->
             </div>
             <br>
             <br>
@@ -546,8 +558,28 @@
         <!---------------------- CONTACT SECTION END------------------->
       </div>
       <!--------------------MAIN CONTENT END------------------>
+      <!------------------STYLE SWITCHER START---------------->
+      <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+          <i class="fas fa-cog fa-cog"></i>
+        </div>
+        <div class="day-night s-icon">
+          <i class="fas"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+          <span class="color" onclick="setActiveStyle('color')"></span>
+          <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+          <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+          <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+          <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+      </div>
+      <!------------------STYLE SWITCHER START---------------->
     </div>
     <!-----------JS FILES-------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="scripts.js"></script>
+    <script src="style-switcher.js"></script>
   </body>
 </html>
